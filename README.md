@@ -12,10 +12,14 @@ Este projeto tem como objetivo validar o funcionamento de duas APIs públicas ut
 
 ## ✅ Cenários de Teste
 
-1. Validar que o endpoint de categorias retorna status 200.
-2. Validar que a lista de categorias não está vazia.
-3. Validar que uma piada é retornada para uma categoria válida.
-4. Validar que ao utilizar uma categoria inválida, a API retorna erro (404).
+1. Validar que o retorno da API é um array JSON não vazio.
+2. Validar que a resposta contém uma categoria específica.
+3. Validar que a resposta contém todas as categorias esperadas.
+4. Validar o tempo de resposta da API de categorias.
+5. Validar que a API retorna status 200 para uma categoria válida.
+6. Validar que o campo "value" da joke está preenchido.
+7. Validar que a categoria retornada está presente na resposta.
+8. Validar estrutura da resposta da joke.
 
 ## 🛠️ Tecnologias utilizadas
 
@@ -28,41 +32,40 @@ Este projeto tem como objetivo validar o funcionamento de duas APIs públicas ut
 ## ▶️ Como executar os testes
 
 1. Clone o repositório:
-    ```
-    git clone <url-do-repositorio>
+    ```bash
+    git clone https://github.com/francaKaren/ChuckNorrisTest.git
     ```
 
 2. Navegue até o diretório do projeto:
-    ```
+    ```bash
     cd ChuckNorrisApiTest
     ```
 
 3. Execute os testes com o Maven:
-    ```
+    ```bash
     mvn test
     ```
 
 4. O relatório HTML será gerado em:
-    ```
+    ```bash
     target/report.html
     ```
 
 ## 📁 Estrutura de Diretórios
 
-```
 src
 ├── test
-│   ├── java
-│   │   ├── steps
-│   │   │   ├── ConsultaCategoriaSteps.java
-│   │   │   └── ConsultaJokesSteps.java
-│   │   └── runners
-│   │       └── TestRunner.java
-│   └── resources
-│       └── features
-│           ├── consultaCategoria.feature
-│           └── consultaJokes.feature
-```
+│ ├── java
+│ │ ├── steps
+│ │ │ ├── ConsultaCategoriaSteps.java
+│ │ │ └── ConsultaJokesSteps.java
+│ │ └── runners
+│ │ └── TestRunner.java
+│ └── resources
+│ └── features
+│ ├── consultaCategoria.feature
+│ └── consultaJokes.feature
+
 
 ---
 
