@@ -51,22 +51,6 @@ Este projeto tem como objetivo validar o funcionamento de duas APIs públicas ut
     target/report.html
     ```
 
-## 📁 Estrutura de Diretórios
-
-src
-├── test
-│ ├── java
-│ │ ├── steps
-│ │ │ ├── ConsultaCategoriaSteps.java
-│ │ │ └── ConsultaJokesSteps.java
-│ │ └── runners
-│ │ └── TestRunner.java
-│ └── resources
-│ └── features
-│ ├── consultaCategoria.feature
-│ └── consultaJokes.feature
-
-
 ---
 
 Desenvolvido para fins de avaliação técnica. 💻
