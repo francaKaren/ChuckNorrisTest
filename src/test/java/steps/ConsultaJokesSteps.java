@@ -13,8 +13,8 @@ public class ConsultaJokesSteps {
     private Response response;
     private String categoria;
 
-    @Dado("que realizo a consulta de piada para a categoria {string}")
-    public void que_realizo_a_consulta_de_piada_para_a_categoria(String categoria) {
+    @Dado("que realizo a consulta de joke para a categoria {string}")
+    public void que_realizo_a_consulta_de_joke_para_a_categoria(String categoria) {
         this.categoria = categoria;
         response = given()
                 .queryParam("category", categoria)
@@ -48,8 +48,8 @@ public class ConsultaJokesSteps {
                 .body("$", hasKey(campo3));
     }
 
-    @Entao("o tempo de resposta da piada deve ser menor que {int} milissegundos")
-    public void o_tempo_de_resposta_da_piada_deve_ser_menor_que(Integer tempo) {
+    @Entao("o tempo de resposta da joke deve ser menor que {int} milissegundos")
+    public void o_tempo_de_resposta_da_joke_deve_ser_menor_que(Integer tempo) {
         assertThat("Resposta está nula", response, is(notNullValue()));
         response.then().time(lessThan((long) tempo));
     }
