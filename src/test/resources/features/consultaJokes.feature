@@ -1,7 +1,7 @@
 # languade: pt
 # enconding: UTF-8
 
-Feature: Consulta de piadas por categoria na API do Chuck Norris
+Feature: Consulta de jokes por categoria na API do Chuck Norris
 
   Scenario: Validar que a API retorna status 200 para uma categoria válida
     Given que realizo a consulta de joke para a categoria "animal"
